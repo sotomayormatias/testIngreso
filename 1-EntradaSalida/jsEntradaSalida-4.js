@@ -4,6 +4,7 @@
 */
 function Mostar()
 {
-	
+	var dato = prompt("Por favor ingrese su nombre", "UTN FRA Ingrese nombre");
+	document.getElementById("elNombre").value = dato;
 }
 
