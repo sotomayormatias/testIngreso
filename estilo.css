@@ -209,7 +209,7 @@ position: absolute;
  
   border:hidden;
   width:150px;
-  background:Blue;
+  background:blue;
   margin-top:1%;
   padding:6px;
   text-align:center;
@@ -223,7 +223,29 @@ position: absolute;
   -webkit-transition:background .3s;
 }
 .MiBotonUTNMenuInicio:hover{
+  background:#4a4a71;
+}
+
+.MiBotonUTNMenuInicioParcial {
+  display:block;
+ 
+  border:hidden;
+  width:150px;
   background:red;
+  margin-top:1%;
+  padding:6px;
+  text-align:center;
+  text-decoration:none;
+  color:#fff;
+  cursor:pointer;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  border-radius:7px;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+.MiBotonUTNMenuInicioParcial:hover{
+  background:green;
 }
 
 
