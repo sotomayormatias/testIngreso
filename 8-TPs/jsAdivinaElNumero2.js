@@ -15,14 +15,51 @@ var contadorIntentos;
 function comenzar()
 {
 	//Genero el número RANDOM entre 1 y 100
-	 
-	
-
+	numeroSecreto = Math.floor((Math.random()*100)+1);
+	contadorIntentos = 0;
+	document.getElementById("intentos").value = contadorIntentos;
+	alert(numeroSecreto);
 }
 
 function verificar()
 {
-	
-	
+	var numeroIngresado = document.getElementById("numero").value;
+	contadorIntentos++;
 
+	if(numeroIngresado < numeroSecreto){
+		alert("Te falta!");
+		document.getElementById("intentos").value = contadorIntentos;
+	} else if(numeroIngresado > numeroSecreto){
+		alert("Te pasaste!");
+		document.getElementById("intentos").value = contadorIntentos;
+	} else {
+		switch (contadorIntentos){
+			case 1:
+				alert("Acertaste en " + contadorIntentos + " intentos! Usted es un psíquico!");
+				break;
+			case 2:
+				alert("Acertaste en " + contadorIntentos + " intentos! Excelente percepción!");
+				break;
+			case 3:
+				alert("Acertaste en " + contadorIntentos + " intentos! Esto es suerte");
+				break;
+			case 4:
+				alert("Acertaste en " + contadorIntentos + " intentos! Excelente técnica");
+				break;
+			case 5:
+				alert("Acertaste en " + contadorIntentos + " intentos! Usted está en la media");
+				break;
+			case 6:
+			case 7:
+			case 8:
+			case 9:
+			case 10:
+				alert("Acertaste en " + contadorIntentos + " intentos! Falta técnica");
+				break;
+			default:
+				alert("Acertaste en " + contadorIntentos + " intentos! afortunado en el amor");
+				break;
+		}
+		
+	}
 }
