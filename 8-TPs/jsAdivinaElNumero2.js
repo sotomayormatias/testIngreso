@@ -18,7 +18,6 @@ function comenzar()
 	numeroSecreto = Math.floor((Math.random()*100)+1);
 	contadorIntentos = 0;
 	document.getElementById("intentos").value = contadorIntentos;
-	alert(numeroSecreto);
 }
 
 function verificar()

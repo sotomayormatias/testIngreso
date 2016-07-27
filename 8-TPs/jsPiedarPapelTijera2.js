@@ -37,7 +37,7 @@ function piedra()
 	}
 	else if(eleccionMaquina=="tijera")
 	{
-		alert("vos ganastes.");
+		alert("vos ganaste.");
 		ContadorDeGanadas++;
 	}
 	else
@@ -61,7 +61,7 @@ function papel()
 	}
 	else if(eleccionMaquina=="piedra")
 	{
-		alert("vos ganastes.");
+		alert("vos ganaste.");
 		ContadorDeGanadas++;
 	}
 	else
@@ -82,7 +82,7 @@ function tijera()
 	}
 	else if(eleccionMaquina=="papel")
 	{
-		alert("vos ganastes.");
+		alert("vos ganaste.");
 		ContadorDeGanadas++;
 	}
 	else
