@@ -1,7 +1,7 @@
 function Mostrar()
 {
 	//tomo la edad  
-	var edad = parseInt(document.getElementById("edad").value);
+	var edad = document.getElementById("edad").value;
 
 	if(edad > 0 && edad < 13){
 		alert("Usted es un niño");
