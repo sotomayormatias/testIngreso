@@ -10,7 +10,7 @@ F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para
 function ComenzarIngreso () 
 {
 	var edad = prompt("Ingrese su edad (debe estar entre 18 y 90 años inclusive)");
-	while(parseInt(edad) < 18 || parseInt(edad) > 90){
+	while(isNaN(edad) || parseInt(edad) < 18 || parseInt(edad) > 90 || edad == ""){
 		edad = prompt("Ingrese su edad (debe estar entre 18 y 90 años inclusive)");
 	}
 	document.getElementById("Edad").value = edad;
@@ -23,7 +23,7 @@ function ComenzarIngreso ()
 	document.getElementById("Sexo").value = sexo;
 
 	var estadoCivil = prompt("Ingrese su estado civil (1: soltero / 2: casado / 3: divorciado / 4: viudo)");
-	while(parseInt(estadoCivil) < 1 || parseInt(estadoCivil) > 4){
+	while(isNaN(estadoCivil) || parseInt(estadoCivil) < 1 || parseInt(estadoCivil) > 4 || estadoCivil == ""){
 		estadoCivil = prompt("Ingrese su estado civil (1: soltero / 2: casado / 3: divorciado / 4: viudo)");
 	}
 	switch(estadoCivil){
@@ -42,19 +42,19 @@ function ComenzarIngreso ()
 	}
 
 	var sueldo = prompt("Ingrese su sueldo bruto (debe Debe ser mayor a 8000)");
-	while(parseInt(sueldo) < 8000){
+	while(isNaN(sueldo) || parseInt(sueldo) < 8000 || sueldo == ""){
 		sueldo = prompt("Ingrese su sueldo bruto (debe Debe ser mayor a 8000)");
 	}
 	document.getElementById("Sueldo").value = sueldo;
 
 	var legajo = prompt("Ingrese su legajo (4 dígitos)");
-	while(parseInt(legajo) < 1000 || parseInt(legajo) > 9999){
+	while(isNaN(legajo) || parseInt(legajo) < 1000 || parseInt(legajo) > 9999 || legajo == ""){
 		legajo = prompt("Ingrese su legajo (4 dígitos)");
 	}
 	document.getElementById("Legajo").value = legajo;
 
 	var nacionalidad = prompt("Ingrese su Nacionalidad ('A': Argentino / 'E': Extranjero / 'N': Nacionalizado)");
-	while(parseInt(nacionalidad) < 18 || parseInt(edad) > 90){
+	while(nacionalidad != "A" && nacionalidad != "E" && nacionalidad != "N"){
 		nacionalidad = prompt("Ingrese su Nacionalidad ('A': Argentino / 'E': Extranjero / 'N': Nacionalizado)");
 	}
 	switch(nacionalidad){

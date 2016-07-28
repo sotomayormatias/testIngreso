@@ -8,10 +8,9 @@ var ColorSecreto;
 var tiempoInicio;
 function comenzar()
 {
-
 	
-
 }//FIN DE LA FUNCIÓN
+
 function Responder(colorParametro)
 {
 	
